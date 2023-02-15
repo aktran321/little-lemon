@@ -16,7 +16,7 @@ class MenuItemsView(generics.ListCreateAPIView):
   serializer_class = MenuSerializer
 class SingleMenuItemView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
   queryset = Menu.objects.all()
-  serialzier_class = MenuSerializer
+  serializer_class = MenuSerializer
 class BookingViewset(viewsets.ModelViewSet): # model viewsets automatically handles CRUD operations
   queryset = Booking.objects.all()
   serializer_class = BookingSerializer
